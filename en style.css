@@ -1,0 +1,67 @@
+/* Header */
+.header img {
+  margin-right: 40px;
+}
+
+.My-Performns .Position i {
+  padding-right: 7px;
+}
+.My-Performns .Button i {
+  padding-right: 5px;
+}
+
+.header .Fa-button {
+  color: #f5f5f5;
+  font-size: 9px;
+  opacity: 0.8;
+  height: 20px;
+  border: solid 1.2px;
+  padding: 5px 10px;
+}
+
+.header .Fa-button:hover {
+  color: #2b2b29;
+  background-color: #f5f5f5;
+  border: solid 1.2px #ffd100;
+}
+
+.header .Fa-button i {
+  padding-right: 5px;
+}
+
+/* Nav */
+.nav ul li .marker {
+  margin-right: 12px;
+}
+
+.nav ul li:not(:last-child)::after {
+  border-left: 1px dashed #2b2b29;
+  margin: 16px 0px 16px 21px;
+}
+
+/* SECTION ABOUT ME */
+
+.sections {
+  border-left: 1px solid #333533;
+  padding-left: 50px;
+}
+
+.section-about-me i {
+  margin-left: 10px;
+}
+/* Section My Skils */
+.section-my-skils .technology li img,
+.section-my-skils .tools li img {
+  margin-right: 6px;
+  width: 48px;
+  height: 48px;
+}
+/* Section My Project */
+.section-my-project .project:not(:last-child) {
+  margin-right: 20px;
+}
+
+.section-my-project .tech-used li,
+.section-my-project .tech-used img {
+  padding-right: 5px;
+}

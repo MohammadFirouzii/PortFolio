@@ -1,0 +1,139 @@
+@media only screen and (max-width: 992px) {
+  body,
+  .section-about-me h5 {
+    background-color: #fafafa;
+    font-size: 16px;
+  }
+
+  /* header */
+  .header {
+    height: auto;
+    padding: 0px;
+  }
+
+  .header .Fa-button,
+  .header .En-button {
+    position: absolute;
+    right: 75px;
+  }
+
+  .header img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+
+  .header .My-Performns {
+    background-color: #fafafa;
+    margin: 0px;
+    width: 100%;
+    text-align: center;
+    margin-top: 150px;
+    padding: 100px 20px 60px;
+  }
+
+  .header .My-Performns h1 {
+    font-size: 36px;
+  }
+
+  .header .My-Performns .Title,
+  .My-Performns .Position,
+  .My-Performns .Position i,
+  .My-Performns .Button {
+    color: #333533;
+  }
+
+  .header .My-Performns .Position {
+    font-size: 26px;
+    margin: 30px 0px;
+  }
+
+  .header .My-Performns .Button {
+    display: inline-block;
+    border-color: #333533;
+    width: 100%;
+  }
+  /* nav */
+  .nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    background-color: #333533;
+    color: #d9d9d9;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .mobile-nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+  }
+
+  .mobile-nav ul li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    flex: 1;
+  }
+
+  .mobile-nav ul li i {
+    margin-right: 5px;
+  }
+
+  .mobile-nav ul li.active {
+    color: #ffd100;
+    border-bottom: 5px solid #ffd100;
+  }
+
+  /* section */
+  .sections {
+    width: auto;
+    border: none;
+    padding: 0px 20px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
+  .sections section {
+    border-top: 1px solid #d9d9d9;
+    padding: 60px 0;
+  }
+
+  .sections section h4 {
+    margin-top: 0;
+  }
+
+  .section-about-me .contact-with-me {
+    flex-direction: column-reverse;
+  }
+
+  .section-about-me .social-media {
+    flex-wrap: wrap;
+  }
+
+  .section-about-me .social-media li {
+    padding: 23px;
+  }
+
+  .section-my-project .project {
+    width: 100%;
+    margin-right: 0px !important;
+  }
+
+  .section-my-project .project .tech-used {
+    justify-content: flex-start;
+  }
+
+  .section-my-project .project .buttons {
+    width: 230px;
+  }
+}

@@ -1,0 +1,376 @@
+/* GLOBOLY */
+/* @font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins/woff/Poppins-Light.woff") format("woff")
+    url("./fonts/Poppins/ttf/Poppins-Light.ttf") format("ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins/woff/Poppins-Medium.woff") format("woff")
+  url("./fonts/Poppins/ttf/Poppins-Medium.ttf") format("ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins/woff/Poppins-Regular.woff") format("woff")
+  url("./fonts/Poppins/ttf/Poppins-Regular.ttf") format("ttf");
+  font-weight: 500;
+} */
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  /* transition: all 0.4s; */
+}
+
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+/* header style */
+
+.header img {
+  width: 290px;
+  height: 290px;
+}
+
+.header {
+  background-color: rgb(43, 43, 41);
+  height: 350px;
+}
+
+.header,
+.nav-section {
+  display: flex;
+  justify-content: center;
+}
+
+.header,
+.nav-section,
+.My-Performns {
+  padding: 45px 0;
+}
+
+.My-Performns .Title {
+  font-size: 40px;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.My-Performns .Title,
+.My-Performns .Position i,
+.My-Performns .Button {
+  color: #ffd100;
+}
+
+.My-Performns .Position {
+  color: #f5f5f5;
+  line-height: 10px;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.My-Performns .Button {
+  border: solid 1px #ffd100;
+  padding: 7px 25px;
+}
+
+.My-Performns .Button,
+.header .Fa-button,
+.My-Performns .Button:hover,
+.header .Fa-button:hover {
+  border-radius: 4px;
+}
+
+.My-Performns .Button:hover {
+  color: rgb(43, 43, 41);
+  background-color: #ffd100;
+  border: solid 1px #ffffff;
+}
+
+/* NAVBAR */
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav {
+  width: 250px;
+  font-size: 22px;
+  position: fixed;
+  left: 80px;
+}
+
+.nav ul li {
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.nav ul li.active {
+  font-size: 25px;
+}
+
+.nav ul li .marker {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  border: 1px solid #333533;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.nav ul li.active .marker,
+.nav ul li:hover .marker {
+  background-color: #2b2b29;
+  color: #ffd100;
+}
+
+.nav ul li:not(:last-child)::after {
+  content: "";
+  display: block;
+  height: 48px;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+/* SECTION ABOUT ME */
+.sections {
+  width: 850px;
+  margin-left: 250px;
+}
+
+.section-about-me .contact-with-me,
+.section-about-me .social-media {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-about-me h5 {
+  color: #a0a0a0;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.section-about-me i {
+  font-size: 15px;
+  color: #a0a0a0;
+  cursor: pointer;
+}
+
+.section-about-me i:hover {
+  color: #333533;
+}
+
+.section-about-me .social-media span {
+  display: inline-block;
+  height: 56px;
+  width: 56px;
+}
+
+.section-about-me .social-media span.linkedin {
+  background-image: url("./pictures/normal/linkedin.png");
+}
+
+.section-about-me .social-media span.linkedin:hover {
+  background-image: url("./pictures/linkedin-hover.png");
+}
+
+.section-about-me .social-media span.github {
+  background-image: url("./pictures/normal/github.png");
+}
+
+.section-about-me .social-media span.github:hover {
+  background-image: url("./pictures/github-hover_2.png");
+}
+
+.section-about-me .social-media span.stackoverflow {
+  background-image: url("./pictures/normal/stackoverflow.png");
+}
+
+.section-about-me .social-media span.stackoverflow:hover {
+  background-image: url("./pictures/stackoverflow-hover.png");
+}
+.section-about-me .social-media span.twitter {
+  background-image: url("./pictures/normal/twitter.png");
+}
+
+.section-about-me .social-media span.twitter:hover {
+  background-image: url("./pictures/twitter-hover_2.png");
+}
+.section-about-me .social-media span.telegram {
+  background-image: url("./pictures/normal/telegram.png");
+}
+
+.section-about-me .social-media span.telegram:hover {
+  background-image: url("./pictures/telegram-hover.png");
+}
+.section-about-me .social-media span.whatsapp {
+  background-image: url("./pictures/normal/whatsapp.png");
+}
+
+.section-about-me .social-media span.whatsapp:hover {
+  background-image: url("./pictures/whatsapp-hover.png");
+}
+.section-about-me .social-media span.instagram {
+  background-image: url("./pictures/normal/instagram.png");
+}
+
+.section-about-me .social-media span.instagram:hover {
+  background-image: url("./pictures/instagram-hover.png");
+}
+
+/* SECTION MY SKILS */
+
+.section-my-skils .technology li,
+.section-my-skils .tools li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #a0a0a0;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 10px 24px;
+}
+
+.section-my-skils .technology li img,
+.section-my-skils .tools li img {
+  vertical-align: middle;
+}
+
+.section-my-skils .technology li i,
+.section-my-skils .tools li i {
+  padding: 10px 12px;
+  border-left: 0.5px solid #a0a0a0cd;
+}
+
+.section-my-skils .technology li div:first-child,
+.section-my-skils .tools li div:first-child {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.section-my-skils .other-skils li {
+  display: inline-block;
+  border: 1px solid #a0a0a0;
+  border-radius: 24px;
+  padding: 4px 16px;
+  margin: 0px 10px 18px;
+}
+
+/* Sction My Project */
+
+.section-my-project .projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-my-project .project {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #a0a0a0;
+  width: 240px;
+  padding: 10px 15px;
+  height: 400px;
+  border-radius: 8px;
+  margin-bottom: 36px;
+}
+
+.section-my-project .project img {
+  width: 210px;
+}
+
+.section-my-project .tech-used,
+.section-my-project .tech-used ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.section-my-project .tech-used li,
+.section-my-project .tech-used img {
+  display: flex;
+}
+.section-my-project .tech-used img {
+  width: 26px;
+}
+.section-my-project div h6,
+.section-my-project div p {
+  margin: 0px;
+  margin-top: 8px;
+}
+
+.section-my-project .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.section-my-project .buttons a {
+  color: #2b2b29;
+  width: 50%;
+  padding: 5px 5px;
+}
+
+.section-my-project .buttons a:last-child {
+  border: 1px solid #2b2b29;
+  border-radius: 5px;
+}
+
+.section-my-project .buttons a:last-child:hover {
+  color: #f5f5f5;
+  background-color: #2b2b29;
+}
+
+.section-my-project .buttons a:first-of-type:hover {
+  color: #a0a0a0;
+}
+
+.section-my-project .buttons i {
+  padding: 0px 5px;
+}
+
+/* scroll style */
+
+.header-scroll {
+  position: sticky;
+  top: 0;
+  height: 200px;
+}
+
+.img-scroll {
+  width: 100px !important ;
+  height: 100px !important;
+}
+
+.h1-scroll {
+  font-size: 20px !important ;
+}
+
+.My-Performns-scroll {
+  display: flex;
+  width: 650px;
+  justify-content: space-around;
+  align-items: baseline;
+  padding: 22px 0px !important;
+}
