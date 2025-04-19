@@ -41,6 +41,7 @@ function scroll(e) {
 
     ScrollButtonToMySkilsM.addEventListener("click", () => {
       const topOffset = distanceMySkilsFromTop;
+
       // Scroll to the target section with smooth animation
       window.scrollTo({
         top: topOffset,
@@ -50,6 +51,7 @@ function scroll(e) {
 
     ScrollButtonToMyProjectM.addEventListener("click", () => {
       const topOffset = distanceMyProjectFromTop;
+
       // Scroll to the target section with smooth animation
       window.scrollTo({
         top: topOffset,
@@ -125,7 +127,7 @@ function handleScroll(e) {
       ScrollButtonToAboutMeD.classList.add("active");
       ScrollButtonToMySkilsD.classList.remove("active");
       ScrollButtonToMyProjectD.classList.remove("active");
-    } else if (verticalScroll < distanceMyProjectFromTopD) {
+    } else if (verticalScroll < distanceMyProjectFromTopD - 50) {
       ScrollButtonToAboutMeD.classList.remove("active");
       ScrollButtonToMySkilsD.classList.add("active");
       ScrollButtonToMyProjectD.classList.remove("active");
